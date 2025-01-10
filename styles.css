@@ -7,7 +7,7 @@
 
 body {
     background-image: url("bcg-rudnar.png");
-    background-size: 50%;
+    background-size: 1400px;
 }
 
 #wrapper {
@@ -23,7 +23,7 @@ header img {
     transform: rotateZ(90deg);
 }
 
-nav {
+/* nav {
     background-color: darkcyan;
     display: flex;
     justify-content: space-between;
@@ -35,10 +35,39 @@ a.menu {
     color: white;
     text-decoration: none;
     text-align: center;
+} */
+
+
+/* same as above  */
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: 25%;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkcyan;
+    padding: 20px 35px;
 }
 
 a.menu:hover {
     background-color: crimson;
+    transition: all 0.8s ease-in;
+}
+
+@media (max-width:800px) {
+    nav a {
+        width: 50%;
+    }
+}
+@media (max-width:500px) {
+    nav a {
+        width: 100%;
+    }
 }
 
 .active {
