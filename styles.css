@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bcg-rudnar.png");
+    background-size: 50%;
+}
+
+#wrapper {
+     max-width: 1000px;
+     margin: 0 auto;
+     background-color: white;
+}
+
+header img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transform: rotateZ(90deg);
+}
+
+nav {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.menu {
+    width: 25%;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.menu:hover {
+    background-color: crimson;
+}
+
+.active {
+    background-color: crimson;
+}
+
+article {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+article h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0 10% 20px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid crimson;
+}
+
+img.left {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 45%;
+    border-radius: 50% 40%;
+}
+
+article p {
+    text-align: justify;
+    line-height: 35px;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    height: 40px;
+    background-color: darkcyan;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
